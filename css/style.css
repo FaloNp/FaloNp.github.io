@@ -1,0 +1,181 @@
+/*BASIC*/
+body {
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	width: 100px;
+	border: 1px solid white;
+	padding: 19px 10px;
+	outline: none;
+	background: transparent;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+button a {
+
+	text-decoration: none;
+	font-size: 11px;
+	border-radius: 40px;
+	color: black;
+}
+
+button:hover {
+	transition: 0.4s;
+	border-radius: 0%;
+}
+
+
+
+.font{
+
+	font-family: "OpenSans Light";
+	font-size: 20px;
+}
+
+a{
+	text-decoration: none;
+	color:white;
+	cursor: pointer;
+
+}
+
+
+/*INDEX*/
+#CONTAINER {
+	width: 100%;
+	min-height: 100vh;
+	background-color: wheat;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	overflow-x: hidden;
+	margin: auto;
+	color: black;
+	align-items: center;
+}
+.fontimportant
+{
+	font-family: gotham !important;
+	font-size: 25px;
+}
+#LAYER {
+	display: flex;
+	background-color: transparent;
+	z-index: 2;
+	height: 0px;
+}
+
+.LOGO {
+	left: 1px;
+	margin-top: 1px;
+}
+.LOGO img {
+	width: 40px;
+	height: 25px;
+}
+.PHOTO{
+	background-image: url("foto/pliki_glowne/background.png");
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	top: 0px;
+	transition: 0;
+	align-items: center;
+	min-height: 100vh;
+	width: 100vw;
+	justify-content: center;
+}
+.BOX {
+	line-height: 1.9;
+	font-family: Arial;
+	letter-spacing: 0.049em;
+	font-size: 19px;
+	padding: 5px;
+	width: 90%;
+	background-color: transparent;
+	border-radius: 25px;
+	margin: 21px 0px;
+}
+.BOXPHOTO {
+
+	position: absolute;
+	right: 70px;
+	
+}
+.BOXPHOTO img{
+	width: 50px;
+	height: 50px;	
+}
+.BOXTITLEFIELD {
+	text-align: center;
+	font-size: 35px;
+	border:#1a1819 solid 5px;
+	width: 50%;
+}
+
+.BOXDESCRIPTION
+{
+	display: flex;
+	align-items: center;	
+}
+
+.BOXDESCRIPTIVEFIELD {
+	text-align: justify;
+}
+.FOOTER{
+	min-height: 100vh !important;
+}
+.FOOTERINFO{
+	
+}
+.FOOTERINFO IMG{
+	width:37px;
+	height: 37px;
+	transform: translateY(20%);
+}
+@media (min-width: 700px) {
+	#CONTAINER {
+		overflow: hidden;
+	}
+
+
+
+	#LAYER {
+		
+	}
+
+
+	.INDEX_paseklogo {
+		padding: 10px;
+		left: 1px;
+	}
+
+	.INDEX_paseklogo img {
+		width: 40px;
+		height: 25px;
+		z-index: 2;
+	}
+
+	.INDEX_pasekmenu {
+		right: 50%;
+		position: absolute;
+		text-align: center;
+		max-height: 100%;
+		z-index: 2;
+	}
+
+	.BOX {
+		position: relative;
+
+	}
+
+
+
+}
+
+
+
+
