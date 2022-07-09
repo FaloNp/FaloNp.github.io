@@ -79,7 +79,7 @@ window.addEventListener("resize", displayWindowSize);
 displayWindowSize();
 let Scroll = document.getElementsByClassName('scrollLayer')[0];
 Scroll.addEventListener("click", () => {
-    document.getElementById('Layer_Menu').scrollIntoView({
+    document.getElementsByClassName('Pho')[0].scrollIntoView({
         behavior: 'smooth',
     });
 });
