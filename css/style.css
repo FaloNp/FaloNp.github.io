@@ -10,6 +10,8 @@ a{
 body {
     font-family: gotham;
     color: white;
+    color: black !important;
+    
 }
 
 .menu_button{
@@ -18,9 +20,9 @@ body {
     border: none;
     cursor: pointer;
     height:50px;
-    color:white;
+    color:black;
     background-color: transparent;
-    border: 2px solid white;
+    border: 2px solid black;
     transition: 0.5s;
 }
 .menu_button:hover{
@@ -89,6 +91,7 @@ body {
     display: flex;
     flex-direction: column;
     background-attachment: fixed;
+    background-color: white !important;
 }
 .cointainerStop{
     position: absolute;
@@ -102,10 +105,10 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: wheat;
     height: 50px;
     z-index: 2;
-    color:white;
+    color:black;
+    background-color: white !important;
 }
 
 nav {
@@ -138,12 +141,12 @@ nav {
     height: 55px;
 }
 .Layer_Center {
-    height: 500px;
+    height: 50%;
     width: 90%;
     margin:auto;
     background-color: transparent;
     display: flex;
-    justify-content:center;
+    justify-content:left;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -154,16 +157,16 @@ nav {
     margin:auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
 }
 
 #Main_Text{
     font-size: 27px;
-    padding: 0 50px;
+    padding: 0;
 }
 .Description_Text{
     font-size: 25px;
-    width: 90%;
+    width: 100%;
     margin:auto;
     display: flex;
     line-height: 1.9;
@@ -289,7 +292,7 @@ object-fit: cover;
     }
     
     nav ul li a {
-        color: white;
+        color: black;
         text-decoration: none;
     }
     
@@ -302,13 +305,8 @@ object-fit: cover;
         visibility: hidden;
     }
     #photo {
-        background-color: white;
-        background-image: url('photo/flowerwet.png');
-        background-size: cover;
-        background-position: center;
         background-repeat:no-repeat;
         background-position: center center;
-        overflow: hidden;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -326,25 +324,21 @@ object-fit: cover;
     }
     .Layer_Center {
         height: 500px;
-        width: 90%;
-        margin:auto;
-        background-color: transparent;
-        display: flex;
-        justify-content:center;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
     }
     #Main_Text{
         font-size: 51px;
         padding: 0 50px;
+        
     }
     .Description_Text{
         font-size: 31px;
         width: 50%;
+        
     }
     #row {
         width: 50%;
+        display: flex;
+        justify-content:center;
     }
 
 
