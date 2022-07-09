@@ -83,7 +83,6 @@ body {
 .cointainer {
     width: 100%;
     min-height: 100vh;
-    background:wheat;
     background-size: cover;
     background-position: center;
     overflow-x: hidden;
@@ -151,13 +150,15 @@ nav {
     display: flex;
     flex-direction: column;
     padding: 10px 0px;
+    background: wheat;
+    padding: 15px;
 }
 #row {
     width: 100%;
     margin:auto;
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: space-between;
 }
 
 #Main_Text{
