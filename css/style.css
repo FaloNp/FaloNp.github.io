@@ -140,7 +140,7 @@ nav {
     height: 55px;
 }
 .Layer_Center {
-    min-height: 100vh;
+    
     width: 90%;
     margin:auto;
     background-color: transparent;
@@ -149,6 +149,15 @@ nav {
     align-items: center;
     display: flex;
     flex-direction: column;
+}
+.fotoU{
+    width: 210px;
+    height: 210px;
+    background-image:url('photo/zopen.png');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 50%;
 }
 #row {
     width: 100%;
@@ -182,10 +191,11 @@ nav {
 .navigation_list{
     font-size: 27px;
     justify-content: space-around;
-    align-items: center;
+    align-items: start;
     display: flex;
     flex-direction: column;
     height: 100vh;
+    padding: 20px;
 }
 .field{
     overflow:scroll !important;
@@ -235,13 +245,12 @@ object-fit: cover;
     transition: 0.5s;
 }
 .openfoto{
-    width: 450px;
-    height: 450px;
+    width: 210px;
+    height: 210px;
     background-image:url('photo/zopen.png');
     background-size: cover;
     background-position: center;
     cursor: pointer;
-    z-index: 2;
     border-radius: 50%;
 }
 
@@ -325,7 +334,12 @@ object-fit: cover;
         height: 55px;
     }
     .Layer_Center {
-        height: 500px;
+        min-height: 100vh;
+    }
+    .fotoU{
+        width: 450px;
+        height: 450px;
+
     }
     #Main_Text{
         font-size: 51px;
@@ -342,7 +356,10 @@ object-fit: cover;
         display: flex;
         justify-content:center;
     }
-
+    .openfoto{
+        width: 450px;
+        height: 450px;
+    }
 
 
 
