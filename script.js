@@ -1,11 +1,32 @@
+let Check = document.getElementById('return');
+let Click = document.getElementsByClassName('openfoto')[0];
+let Field = document.getElementsByClassName('field')[0];
+let Stop = document.getElementsByClassName('cointainer')[0];
+//////////////////////////////////////////////////////////////
 const hamburger = document.querySelector('.MENU');
 const nav = document.querySelector('.navigation');
 const handleClick = () => {
     hamburger.classList.toggle('MENU_CLICKED');
     nav.classList.toggle('navigation--active');
+    if (nav.classList.contains('navigation--active')){
+       
+       
+       /* Stop.classList.add('cointainerStop');
+        document.getElementsByClassName('Zdjecia')[0].scrollIntoView({  
+        });*/
+    }
+    /*
+    else{
+        Stop.classList.remove('cointainerStop');
+        document.getElementsByClassName('Zdjecia')[0].scrollIntoView({  
+        });
+    }*/
     }
     hamburger.addEventListener('click', handleClick);
-  
+
+
+
+////////////////////////////////////////////////////////////// 
     var minutesLabel = document.getElementsByClassName("script")[0];
     var base = 5000;
     var totalSeconds = 0;
@@ -16,7 +37,7 @@ const handleClick = () => {
         minutesLabel.innerHTML = base + (parseInt(totalSeconds / 60));
         //minutesLabel.innerHTML = base + totalSeconds*1;
     }
-
+//////////////////////////////////////////////////////////////
 var w;
 function displayWindowSize() {
 var w = document.documentElement.clientWidth;
@@ -83,35 +104,9 @@ Scroll.addEventListener("click", () => {
         behavior: 'smooth',
     });
 });
+////////////////////////////////////////////////////////////
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-let Check = document.getElementById('return');
-let Click = document.getElementsByClassName('openfoto')[0];
-let Field = document.getElementsByClassName('field')[0];
-let Stop = document.getElementsByClassName('cointainer')[0];
 Click.addEventListener('click', () => {
         Field.classList.add('activefield');
         Stop.classList.add('cointainerStop');
